@@ -99,19 +99,19 @@
     <!-- /Float -->
 
     <!-- Portfolio -->
-    <section class="portfolio-section">
+    <!-- <section class="portfolio-section">
       <div class="portfolio-section-content">
         <div class="portfolio-section-content-images has-text-centered background-is-red">
           Pictures
         </div>
         <div class="portfolio-section-content-text">
           <h1 class="portfolio-section-content-text-title color-is-black has-text-weight-bold">We like to show off. </h1>
-          <h2 class="portfolio-section-content-text-subtitle">View our latest projects and the mindset behind them.</h2>
-          <p class="portfolio-section-content-text-paragraph">At Ukiyo, we specialize in creative and elegant designs to optimize your digital presence, while also providing you the tools to manage your own content and data on the fly. </p>
-          <a class="">View our full portfolio</a>
+          <h2 class="portfolio-section-content-text-subtitle color-is-blue has-text-weight-semibold">View our latest projects and the mindset behind them.</h2>
+          <p class="portfolio-section-content-text-paragraph has-text-weight-light">At Ukiyo, we specialize in creative and elegant designs to optimize your digital presence, while also providing you the tools to manage your own content and data on the fly. </p>
+          <a class="button is-rounded background-is-blue color-is-white">View our full portfolio</a>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- /Portfolio -->
   </div>
 </template>
@@ -260,17 +260,23 @@ export default {
     justify-content: center
     align-items: center
     .portfolio-section-content-images
+      justify: center
       width: 25%
       height: 100%
+      padding: 10em
+      margin-right: 3em
+      margin-left: 10em
     .portfolio-section-content-text
-      padding-left: 6em
+      padding: 5em 6em 6em 6em
       width: 60%
       justify-content: left
       .portfolio-section-content-text-title
-        font-size: 4em
+        font-size: 3em
       .portfolio-section-content-text-subtitle
       .portfolio-section-content-text-paragraph
+        padding: 3em 7em 3em 0
       .portfolio-section-content-text-button
+        border-color: transparent
 
 .button
 .button-blue
@@ -288,6 +294,10 @@ export default {
   background-color: rgb(0,0,0)
 .color-is-black
   color: rgb(0,0,0)
+.background-is-white
+  background-color: #FFFFFF
+.color-is-white
+  color: #FFFFFF
 .background-is-red
   background-color: rgb(153,51,51)
 .color-is-red

@@ -29,14 +29,28 @@
     <router-view></router-view>
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <div class="columns">
-          <div class="column"><span><p>©2018</p></span></div>
-          <div class="column"><span><p>ukiyo</p></span></div>
-          <div class="column"><span><p>Visit Our Blog</p></span></div>
-          <div class="column"><span><p>Sitemap</p></span></div>
-          <div class="column"><span><p>Get a Free Mockup</p></span></div>
-          <div class="column">
+      <div class="footer-content">
+        <div class="footer-brand footer-section">
+          <div class="footer-item">
+            <p>©2018</p>
+          </div>
+          <div class="footer-item footer-logo">
+            <img src="./assets/logos/ukiyo-logo-2.png">
+          </div>
+        </div>
+        <div class="footer-links footer-section">
+          <div class="footer-item">
+            <p>Visit Our Blog</p>
+          </div>
+          <div class="footer-item">
+            <p>Sitemap</p>
+          </div>
+          <div class="footer-item">
+            <p>Get a Free Mockup</p>
+          </div>
+        </div>
+        <div class="footer-icons footer-section">
+          <div class="footer-item">
             <span class="icon has-text-info">
               <i class="fab fa-instagram"></i>
             </span>
@@ -79,4 +93,29 @@ export default {
     padding-left: 1.5em
     padding-right: 1.5em
 
+.footer
+  background-color: #020101
+  color: white
+  padding-left: 4em
+  padding-right: 4em
+  padding: 0 4em 0 4em
+  .footer-content
+    display: flex
+    justify-content: center
+    align-items: center
+    .footer-section
+      display: flex
+      width: 33%
+    .footer-brand
+      align-items: center
+      .footer-logo
+        width: 200px
+        padding-left: 6em
+    .footer-links
+      width: 60%
+      justify-content: center
+      .footer-item
+        padding: 2em
+    .footer-icons
+      justify-content: flex-end
 </style>
