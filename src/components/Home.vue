@@ -1,10 +1,11 @@
 <template>
   <div class="Home">
     <!-- Hero -->
-    <section class="hero is-large hero-clouds-background">
-      <div class="hero-body">
-        <div class="container">
-        </div>
+    <section class="hero hero-clouds-background">
+      <div class="hero-body hero-body-extra-padding">
+          <figure class="image hero-logo">
+            <img src="./../assets/logos/ukiyo-logo-2-circle.png">
+          </figure>
       </div>
       <div class="hero-foot">
             <div class="hero-foot-content has-text-centered">
@@ -78,7 +79,7 @@
             <span class="icon is-large float-section-content-column-icon">
               <i class="fas fa-3x fa-table"></i>
             </span>
-            <p class="float-section-content-column-text">An affordable content management system with a user-friendly interface for creating and managing APIs.</p>
+            <p class="float-section-content-column-text">An affordable content management system with a user-friendly interface for creating and managing APIs.</p>
           </div>
           <div class="column float-section-content-column">
             <span class="icon is-large float-section-content-column-icon">
@@ -106,9 +107,7 @@
         <div class="portfolio-section-content-text">
           <h1 class="portfolio-section-content-text-title color-is-black has-text-weight-bold">We like to show off. </h1>
           <h2 class="portfolio-section-content-text-subtitle">View our latest projects and the mindset behind them.</h2>
-          <p class="portfolio-section-content-text-paragraph">At Ukiyo, we specialize in creative and elegant designs to optimize your 
-            digital presence, while also providing you the tools to manage your 
-            own content and data on the fly. </p>
+          <p class="portfolio-section-content-text-paragraph">At Ukiyo, we specialize in creative and elegant designs to optimize your digital presence, while also providing you the tools to manage your own content and data on the fly. </p>
           <a class="">View our full portfolio</a>
         </div>
       </div>
@@ -131,7 +130,15 @@ export default {
   background: url('../assets/images/anton-darius-thesollers-370048-unsplash.jpg') center / cover
   background-position: bottom
   position: relative
-
+.hero-body-extra-padding
+  padding: 20em
+  .hero-logo
+    width: 25%
+    position: absolute
+    left: 50%
+    margin-left: -10em
+    top: 50%
+    margin-top: -10em
 .hero-foot
   position: absolute
   bottom: 0
@@ -170,7 +177,7 @@ export default {
         font-size: 1.25em
         line-height: 1.75em
         margin-bottom: 1.5em
-      .text-card-button 
+      .text-card-button
         background-color: #3CBECC
         border-color: transparent
         color: white
@@ -264,7 +271,6 @@ export default {
       .portfolio-section-content-text-subtitle
       .portfolio-section-content-text-paragraph
       .portfolio-section-content-text-button
-      
 
 .button
 .button-blue

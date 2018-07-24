@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- Navbar -->
-    <nav class="navbar is-black" id="navbar">
+    <nav class="navbar" id="navbar">
       <!-- Nav logo -->
       <div class="navbar-brand">
         <a class="navbar-item">
@@ -60,8 +60,19 @@ export default {
 
 .navbar
   padding: 1em
+  position: fixed
+  width: 100%
+  background-color: #1A1A1A
   .navbar-brand
   .navbar-end
+    .navbar-item
+      color: white
+      margin-left: 1em
+      margin-right: 1em
+      &:hover
+        color: white
+        background-color: black
+        border-radius: 25%
   .navbar-button
     background-color: #993333
     border-color: transparent
