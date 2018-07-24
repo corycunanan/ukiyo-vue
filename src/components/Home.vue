@@ -16,26 +16,33 @@
     <!-- /Hero -->
 
     <!-- Who We Are -->
-    <section class="has-text-centered">
-      <div class="flex-container">
-        <div class="column has-text-left text-card">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+    <section class="has-text-centered about-us-section">
+      <div class="flex-container about-us-section-content">
+        <div class="has-text-left about-us-section-content-column text-card">
+          <p class="text-card-text">
+            Ukiyo is a San Fernando Valley based company founded in the summer of 2018 by brothers Kevin and
+             Cory Cunanan. Ukiyo strives to create affordable and elegant digital solutions for local businesses.
           </p>
+          <a class="button text-card-button is-rounded has-text-weight-bold">Learn More About Us</a>
+
         </div>
-        <div class="column card profile-card">
-          <figure class="image card-image">
-            <img src="./../assets/images/Headshots/kevin.jpg" class="circle-picture">
-          </figure>
-          <h1 class="card-title">Kevin Cunanan</h1>
-          <h1 class="card-subtitle">Kevin Cunanan</h1>
+        <div class="card about-us-section-content-column profile-card">
+          <div class="profile-card-content">
+            <figure class="image card-image">
+              <img src="./../assets/images/Headshots/kevin.jpg" class="circle-picture">
+            </figure>
+            <h1 class="card-title">Kevin Cunanan</h1>
+            <h1 class="card-subtitle">Chief Engineer</h1>
+          </div>
         </div>
-        <div class="column card profile-card">
-          <figure class="image card-image">
-            <img src="./../assets/images/Headshots/kevin.jpg" class="circle-picture">
-          </figure>
-          <h1 class="card-title">Kevin Cunanan</h1>
-          <h1 class="card-subtitle">Kevin Cunanan</h1>
+        <div class="card about-us-section-content-column profile-card">
+          <div class="profile-card-content">
+            <figure class="image card-image">
+              <img src="./../assets/images/Headshots/cory.jpg" class="circle-picture">
+            </figure>
+            <h1 class="card-title">Kevin Cunanan</h1>
+            <h1 class="card-subtitle">Lead Designer</h1>
+          </div>
         </div>
       </div>
     </section>
@@ -91,8 +98,20 @@
     <!-- /Float -->
 
     <!-- Portfolio -->
-    <section>
-      Portfolio
+    <section class="portfolio-section">
+      <div class="portfolio-section-content">
+        <div class="portfolio-section-content-images has-text-centered background-is-red">
+          Pictures
+        </div>
+        <div class="portfolio-section-content-text">
+          <h1 class="portfolio-section-content-text-title color-is-black has-text-weight-bold">We like to show off. </h1>
+          <h2 class="portfolio-section-content-text-subtitle">View our latest projects and the mindset behind them.</h2>
+          <p class="portfolio-section-content-text-paragraph">At Ukiyo, we specialize in creative and elegant designs to optimize your 
+            digital presence, while also providing you the tools to manage your 
+            own content and data on the fly. </p>
+          <a class="">View our full portfolio</a>
+        </div>
+      </div>
     </section>
     <!-- /Portfolio -->
   </div>
@@ -136,29 +155,63 @@ export default {
       border-color: transparent
       color: white
 
-.flex-container
-  display: flex
-  justify-content: center
-  .column
-  .text-card
-    flex-wrap: wrap
-  .profile-card
-    .card-image
-      margin: 2.5em
-      width: 150px
-      height: 150px
-      .circle-picture
-        border-radius: 50%
+.about-us-section
+  padding: 4em 0 4em 0
+  .about-us-section-content
+    display: flex
+    justify-content: center
+    .about-us-section-content-column
+      width: 25%
+      margin: 2em
+    .text-card
+      flex-wrap: wrap
+      padding: 0 2em 0 2em
+      .text-card-text
+        font-size: 1.25em
+        line-height: 1.75em
+        margin-bottom: 1.5em
+      .text-card-button 
+        background-color: #3CBECC
+        border-color: transparent
+        color: white
+        width: 100%
+        padding-top: 1.25em
+        padding-bottom: 1.25em
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2)
+
+    .profile-card
+      width: 21%
+      height: 20em
+      background: url('../assets/images/dan-aragon-382945-unsplash-black.jpg')
+      background-position: bottom
+      outline: 1px solid rgb(83,193,204)
+      outline-offset: 5px
+      .profile-card-content
+        margin-top: 2.5em
+        margin-bottom: 2em
+        .card-image
+          margin-bottom: 1em
+          width: 150px
+          height: 150px
+          display: inline-block
+          .circle-picture
+            border-radius: 50%
+        .card-title
+          color: white
+          font-weight: bold
+          font-size: 1.15em
+        .card-subtitle
+          color: white
 
 .float-section
   background: url(../assets/images/chuttersnap-255211-unsplash-blue.jpg) center / cover
   color: white
-
   .float-section-title
     background: rgba(103,0,0,.38)
     color: white
     .flex-container
       display: flex
+      margin: 1.25em 0 1.25em 0
       .float-section-title-main-title
         margin: 0 0 0 3.5em
         .float-section-title-main-title-icon
@@ -193,4 +246,44 @@ export default {
       .float-section-content-column-text
         font-size: 1.01em
         line-height: 2em
+
+.portfolio-section
+  .portfolio-section-content
+    display: flex
+    justify-content: center
+    align-items: center
+    .portfolio-section-content-images
+      width: 25%
+      height: 100%
+    .portfolio-section-content-text
+      padding-left: 6em
+      width: 60%
+      justify-content: left
+      .portfolio-section-content-text-title
+        font-size: 4em
+      .portfolio-section-content-text-subtitle
+      .portfolio-section-content-text-paragraph
+      .portfolio-section-content-text-button
+      
+
+.button
+.button-blue
+  background-color: #3CBECC
+.button-red
+  background-color: #993333
+.button-shadow
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2)
+
+.background-is-blue
+  background-color: #3CBECC
+.color-is-blue
+  color: #3CBECC
+.background-is-black
+  background-color: rgb(0,0,0)
+.color-is-black
+  color: rgb(0,0,0)
+.background-is-red
+  background-color: rgb(153,51,51)
+.color-is-red
+  color: rgb(153,51,51)
 </style>
